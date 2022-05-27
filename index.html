@@ -1,0 +1,818 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Opus LabWorks</title>
+    <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="documentation.css">
+    <link rel="stylesheet" href="style.css">
+    <!--  For Font -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <!--  For icon -->
+    <link rel="stylesheet" href="material-design-iconic-font.min.css">
+    <!--  For animate.css -->
+    <link rel="stylesheet" href="animate.css">
+</head>
+
+<!--    body -->
+
+<body class="dark_theme">
+    <!--    header start-->
+    <header class="px-2 pt-2">
+        <nav class="navbar navbar-light px-0 px-lg-4">
+            <div class="container-fluid py-3 col-sm-12 col-md-11 col-lg-11 px-sm-0 d-flex align-items-center">
+                <a class="navbar-brand d-block m-0" href="https://opuslab.works/" target="_blank">
+                    <img src="logo.png" class="img-fluid">
+                    <img src="logo_light.png" class="img-fluid">
+                </a>
+
+                <div class="follow_us d-flex align-items-center col-12 px-0 pt-3 col-md-auto pt-md-0">
+                    <div class="icon_box d-flex pt-1 pr-md-4">
+                        <a href="https://www.facebook.com/opuslabworks" class="d-block" target="_blank">
+                            <i class="zmdi zmdi-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/opuslabworks/" class="d-block" target="_blank">
+                            <i class="zmdi zmdi-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/c/OpusLabWorks" class="d-block" target="_blank">
+                            <i class="zmdi zmdi-youtube-play"></i>
+                        </a>
+                    </div>
+
+                    <div class="darkTheme_lightThemeButton d-flex ml-auto" id="darkTheme">
+                        <i class="zmdi zmdi-sun"></i>
+                        <i class="zmdi zmdi-brightness-3"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--    header end-->
+
+    <!--banner section start-->
+    <div class="banner padding-bottom pt-5 overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center px-lg-4">
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-7  pb-4 pb-lg-0 wow fadeInLeft" data-wow-duration=".5s">
+                    <div class="banner_text col-12 col-lg-11 col-xl-11">
+                        <h1 class="text-center text-lg-left">
+                            <span>
+                                 Flutter  <br> Installation made <br>Easy...
+                           </span>
+                        </h1>
+                        <h2 class="text-center text-lg-left">
+                            Well Guided instruction to make it easy to understand
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-5">
+                    <div class="banner_img text-center wow fadeInRight" data-wow-duration="0.9s">
+                        <img src="banner_img.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--banner section end-->
+
+
+    <!--Documentation section start-->
+    <section class="position-relative">
+        <div class="doc-container top-border">
+            <div class="container">
+                <div class="row flex-xl-nowrap no-gutters">
+                    <!-- ****************************** DOC SIDEBAR ********************************* -->
+                    <div class="col-xl-3 col-md-4 doc-sidebar">
+                        <div class="clearfix">
+                            <button class="btn btn-link d-md-none collapsed" type="button" data-target="#doc-sidebar-nav" aria-controls="doc-sidebar-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg></button>
+                        </div>
+                        <nav class="doc-links collapse clearfix nav-fix" id="doc-sidebar-nav">
+                            <ul class="list-item">
+                                <li class="dropdown-holder" id="gettingStartedBtn">
+                                    <h4 class="d-flex">
+                                        Getting Started
+                                    </h4>
+                                    <ul class="sub-menu show">
+                                        <li><a href="#setupNode" id="gettingStartedSubBtn1">Download and setup Flutter</a></li>
+                                        <li><a href="#downloadSetup" id="gettingStartedSubBtn2">Setup IDE</a></li>
+                                        <li><a href="#runLocally" id="gettingStartedSubBtn3">Run the app</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-holder" id="customizationBtn">
+                                    <h4>Customization </h4>
+                                    <ul class="sub-menu">
+                                        <li><a href="#iconAndSplash" id="CustomizationSubBtn1">Change app icon  </a></li>
+                                        <li><a href="#otherImages" id="CustomizationSubBtn2">Change app splash</a></li>
+                                        <li><a href="#changeColor" id="CustomizationSubBtn3">Change color(s)</a></li>
+                                        <li><a href="#modifyingComponents" id="CustomizationSubBtn4">Change style of</a></li>
+                                        <!-- <li><a href="#changeAppName" id="CustomizationSubBtn5">Change App, package name
+                                        </a></li> -->
+                                    </ul>
+                                </li>
+                                <li class="dropdown-holder" id="platformBuildsBtn">
+                                    <h4> Platform Builds</h4>
+                                    <ul class="sub-menu">
+                                        <li><a href="#buildAndroidApk" id="platformBuildsSubBtn1">Android setup</a></li>
+                                        <li><a href="#iosSetupGenerate" id="platformBuildsSubBtn2">iOS setup</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- /.doc-links -->
+                    </div>
+                    <!-- /.doc-sidebar -->
+
+                    <!-- Getting Started Content Start-->
+
+                    <div class="col-12 col-xl-9 col-md-8">
+                        <main class="col-md-12 col-xl-12  doc-main-body pb-0 active" id="gettingStartedContent">
+                            <div class="main_inner col-xl-11" id="setupNode">
+                                <h2 class="">Getting Started</h2>
+                                <p class="m-0">
+                                    The following section explains how to set up the Flutter template.
+                                </p>
+                                <div class="text_box pt-4 pb-4">
+                                    <h3 class="pb-3">1. Download and setup Flutter</h3>
+                                    <ul>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    Get the Flutter SDK from the following link:
+                                                    <a href="https://docs.flutter.dev/get-started/install" target="_blank">
+                                                       https://docs.flutter.dev/get-started/install
+                                                     </a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    Once downloaded and install, verify the installation of Flutter SDK & Android SDK, by runnning the following command in terminal:
+                                                </p>
+                                                <div class="mark-blue"><pre>flutter doctor</pre></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div id="downloadSetup"></div>
+                                </div>
+
+
+                                <div class="text_box pt-4 pb-4">
+                                    <h3 class="pb-3">2. Setup IDE</h3>
+                                    <ul>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    Download and install Android Studio from the following link:
+                                                    <a href="https://developer.android.com/studio" target="_blank">
+                                                        https://developer.android.com/studio
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    Start Android Studio. Open plugin preferences (Preferences > Plugins as of v3.6.3.0 or later). Select the Flutter plugin and click Install. Click Yes when prompted to install the Dart plugin. Click Restart when prompted. For more info, visit
+                                                    <a href="https://docs.flutter.dev/get-started/editor?tab=androidstudio" target="_blank">
+                                                       https://docs.flutter.dev/get-started/editor?tab=androidstudio
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    Or install Visual Studio Code from the following link:
+                                                    <a href="https://code.visualstudio.com/" target="_blank">
+                                                     https://code.visualstudio.com/
+                                                      </a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    Start VS Code. Invoke View > Command Palette. Type “install”, and select Extensions: Install Extensions. Type “flutter” in the extensions search field, select Flutter in the list and click Install. This also installs the required Dart plugin. For more
+                                                    info, visit:
+                                                    <a href="https://docs.flutter.dev/get-started/editor?tab=vscode" target="_blank">
+                                                         https://docs.flutter.dev/get-started/editor?tab=vscode
+                                                   </a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div id="runLocally"></div>
+                                </div>
+
+                                <div class="text_box pt-4 pb-4">
+                                    <h3 class="pb-3">3. Run the app</h3>
+                                    <ul>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    Open Android Studio, Go to the <strong>File</strong> menu, click on <strong>Open</strong>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    Then select the flutter project and click on open.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    Go to the lib folder in the project
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    Locate the main
+                                                    <code>Android Studio toolbar</code>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    In the <strong> target selector,</strong>, select an Android device for running the app. If none are listed as available, select
+                                                    <code>Tools> Android > AVD Manager </code> and create one there. For details, see Managing AVDs
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    Click the run icon in the toolbar, or invoke the menu item <code>Run > Run</code>
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="doc-pagination pt-1">
+                                <ul class="d-flex align-items-center justify-content-between p-0">
+                                    <li class=" align-items-center">
+                                        <!-- <a href="#"><i class="zmdi zmdi-chevron-left" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+                                        <span>Previous</span> -->
+                                    </li>
+                                    <li class="align-items-center">
+                                        <a href="#CustomizationsContent" id="Next1">
+                                            <span>Next</span>&nbsp;&nbsp;&nbsp;
+                                            <i class="zmdi zmdi-chevron-right" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </main>
+                        <!-- Getting Started Content end-->
+
+
+                        <!-- Customizations Content Start-->
+                        <main class="col-md-12 col-xl-12  doc-main-body pb-0" id="CustomizationsContent">
+                            <div class="main_inner col-xl-11" id="iconAndSplash">
+                                <h2>Customizations</h2>
+                                <p class="m-0">The following section explains how to do the modifications in the template/app.</p>
+                                <div class="text_box pt-4 pb-4">
+                                    <h3 class="pb-3">1. Change app icon of template/app</h3>
+                                    <ul>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    To change the app icon, change the app_icon.png by your image. You need to resize your image (1024 x 1024)
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    Now run the following commands to apply your app icon:
+                                                </p>
+                                                <div class="mark-blue">
+                                                    <pre>flutter pub get</pre>
+                                                </div>
+                                                <div class="mark-blue">
+                                                    <pre>flutter packages pub run flutter_launcher_icons:main</pre>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    For more info, visit the official page of this package
+                                                    <a href="https://pub.dev/packages/flutter_launcher_icons" target="_blank">
+                                                        https://pub.dev/packages/flutter_launcher_icons
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div id="otherImages"></div>
+                                </div>
+
+                                <div class="text_box pt-4 pb-4">
+                                    <h3 class="pb-3">2. Change app splash of template/app</h3>
+                                    <ul>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    To change the splash, change the app_splash.png by your image. You need to resize your image (2732 x 2732).
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    Now run the following commands to apply your app icon:
+                                                </p>
+                                                <div class="mark-blue">
+                                                    <pre>flutter pub get</pre>
+                                                </div>
+                                                <div class="mark-blue">
+                                                    <pre>flutter packages pub run flutter_launcher_splash:create</pre>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    For more info, visit the official page of this package:
+                                                    <a href="https://pub.dev/packages/flutter_native_splash" target="_blank">
+                                                            https://pub.dev/packages/flutter_native_splash
+                                                        </a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div id="changeColor"></div>
+                                </div>
+
+                                <div class="text_box pt-4 pb-4">
+                                    <h3 class="pb-3">3. Change color(s) of template/app</h3>
+                                    <ul>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    Open the file <code>colors.dart</code> in the project and modify underlying variable values.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    Now run the following commands to apply your app icon:
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div id="modifyingComponents"></div>
+                                </div>
+
+                                <div class="text_box pt-4 pb-4">
+                                    <h3 class="pb-3">4. Change style of template/app</h3>
+                                    <ul>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    Open the file <code>styles.dart</code> in the project and modify underlying <code>ThemeData's</code> attributes.
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div id="changeAppName"></div>
+                                </div>
+                                <!-- <div class="text_box pt-4 pb-4">
+                                    <h3 class="pb-3">5. Change App name and package name of the template/app</h3>
+                                    <div class="pl-md-4">
+                                        <p class="m-0 pb-3">
+                                            To change the package name/id, modify the value of id parameter for example,
+                                            <code>id="com.first_name.second_name"</code> in the following file:
+                                            <code>config.xml</code>
+                                        </p>
+                                        <p class="m-0 pb-3">
+                                            To change the name, modify the value of the name tag for example,
+                                            <code><name>Your App Name</name></code> in the following file:
+                                            <code>config.xml</code>
+                                        </p>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="doc-pagination pt-1">
+                                <ul class="d-flex align-items-center justify-content-between p-0">
+                                    <li class="align-items-center" id="previous1">
+                                        <a href="#gettingStartedContent">
+                                            <i class="zmdi zmdi-chevron-left" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;
+                                            <span>Previous</span>
+                                        </a>
+                                    </li>
+                                    <li class="align-items-center" id="Next2">
+                                        <a href="#platformBuildsContent">
+                                            <span>Next</span>&nbsp;&nbsp;&nbsp;
+                                            <i class="zmdi zmdi-chevron-right" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </main>
+                        <!-- Customizations Content end-->
+
+                        <!-- Platform Builds Content Start-->
+                        <main class="col-md-12 col-xl-12  doc-main-body pb-0" id="platformBuildsContent">
+                            <div class="main_inner col-xl-11" id="buildAndroidApk">
+                                <h2>Platform Builds</h2>
+                                <p class="m-0">The following section explains how to make a build for Android and iOS.</p>
+                                <div class="text_box pt-4 pb-4">
+                                    <h3 class="pb-3">1. Android setup and generate build (.apk)</h3>
+
+                                    <ul>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    Ensure you have set up Android SDK properly.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    To build a debuggable .apk file, run the following command:
+                                                </p>
+                                                <div class="mark-blue">
+                                                    <pre>flutter build apk –debug</pre>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div id="iosSetupGenerate"></div>
+                                </div>
+
+                                <div class="text_box pt-4 pb-4">
+                                    <h3 class="pb-3">2. iOS setup and generate build</h3>
+                                    <ul>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    Ensure you have Xcode set up properly:
+                                                    <a href="https://apps.apple.com/us/app/xcode/id497799835" target="_blank"> https://apps.apple.com/us/app/xcode/id497799835</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    Run the following command to build an Xcode project:
+                                                </p>
+                                                <div class="mark-blue">
+                                                    <pre>flutter build ios</pre>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    Open project in Xcode by opening .xcworkspace file in ./ios/Runner.xcworkspace
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="zmdi zmdi-circle"></i>
+                                            <div class="li_inner">
+                                                <p class="m-0 pb-3">
+                                                    While launching the app from mac, if you see
+                                                    <br><span>ERROR: Could not connect to lockdownd, error code -17,</span> <br>make sure that you have trusted your computer.
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="doc-pagination pt-1">
+                                <ul class="d-flex align-items-center justify-content-between p-0">
+                                    <li class="d-flex align-items-center" id="previous2">
+                                        <a href="#CustomizationsContent">
+                                            <i class="zmdi zmdi-chevron-left" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+                                        <span>Previous</span>
+                                    </li>
+                                    <!-- <li class="d-flex align-items-center" id="Next2">
+                                        <span>Next</span> &nbsp;&nbsp;&nbsp;
+                                        <a href="#"><i class="zmdi zmdi-chevron-right" aria-hidden="true"></i></a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </main>
+                        <!-- Platform Builds Content end-->
+                    </div>
+                </div>
+                <!-- /.doc-main-body -->
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--Documentation section end-->
+
+
+
+    <!--Get PSD section start-->
+    <section class="get_psd position-relative">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-7" data-wow-duration=".5s">
+                    <img src="get_psd.png" class="img-fluid">
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-5 pb-5 pb-lg-0">
+                    <h2 class="text-center text-lg-left pb-4">
+                        Get .PSD File Free
+                    </h2>
+                    <h3 class="text-center text-lg-left pb-4">
+                        Rate us on your envato account and get free<br>.PSD file in your email.
+                    </h3>
+                    <button id="contact-button" type="submit" class="btn primary_button rounded-pill mx-auto mx-lg-0" data-wow-duration="1.6">
+                        <a href="https://codecanyon.net/downloads" target="_blank">
+                            Go to Downloads
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Get PSD section start-->
+
+    <!--Contact us section start-->
+    <section class="contact_us position-relative">
+        <img src="object1.png" class="object a d-none d-lg-block">
+        <img src="object6.png" class="object b d-none d-lg-block">
+        <img src="object4.png" class="object c d-none d-lg-block">
+        <img src="object3.png" class="object d d-none d-lg-block">
+        <img src="object5.png" class="object e d-none d-lg-block">
+
+        <div class="contact_us_inner position-relative">
+            <div class="container position-relative">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-12 col-lg-8">
+                        <h3 class="text-center text-lg-left">We’re Available for Custom Work</h3>
+                        <h2 class="text-center text-lg-left col-xl-11 px-0">
+                            Get in touch for complete solution with admin panel
+                        </h2>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 pt-3 pt-lg-0">
+                        <button type="submit" class="btn primary_button rounded-pill col-12 col-md-8 col-xl-8 mx-auto" data-wow-duration="1.6" id="contactUS_btn">Connect us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contact us section end-->
+
+
+    <!--footer section start-->
+    <footer class="py-5">
+        <div class="container pt-5">
+            <div class="row col-xl-11 p-0">
+                <div class="col-12 col-md-6 col-lg pb-3 subscribe-col" style="min-width: fit-content;">
+                    <div class="footer_logo pb-4">
+                        <a class="d-block m-0" href="https://opuslab.works/" target="_blank">
+                            <img src="logo.png" class="img-fluid forLightTheme">
+                            <img src="logo_light.png" class="img-fluid forDarkTheme">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 pb-3">
+                    <h2 class="pb-4 mt-2 pt-1 mb-1">Explore our products</h2>
+                </div>
+                <div class="col-12 col-md-6 col-lg pb-3">
+                    <h2 class="d-flex pb-4 mt-2 pt-1 ">
+                        <div class="darkTheme_lightThemeButton d-flex mx-auto" id="darkTheme1">
+                            <i class="zmdi zmdi-sun"></i>
+                            <i class="zmdi zmdi-brightness-3"></i>
+                        </div>
+                    </h2>
+                </div>
+            </div>
+            <div class="row col-xl-11 p-0">
+                <div class="col-12 col-md-6 col-lg pb-3 subscribe-col" style="min-width: fit-content;">
+                    <div class="subscribe_us pb-3">
+                        <h3>
+                            Subscribe for product launch & updates
+                        </h3>
+                        <form id="subscribe-form" class="col-12 col-xl-11 p-0">
+                            <div class="mb-0 form-group w-100">
+                                <input type="email" class="form-control" placeholder="Enter email address" id="subscribe-email" aria-describedby="emailHelp" required>
+                            </div>
+                            <button id="subscribe-button" type="submit" class="btn primary_button border-0 ml-auto">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="icon_box d-flex pt-2 pr-md-4 align-items-center ">
+                        <a href="https://www.facebook.com/opuslabworks" class="d-block" target="_blank">
+                            <i class="zmdi zmdi-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/opuslabworks/" class="d-block" target="_blank">
+                            <i class="zmdi zmdi-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/c/OpusLabWorks" class="d-block" target="_blank">
+                            <i class="zmdi zmdi-youtube-play"></i>
+                        </a>
+                        <a class="d-block" target="_blank">
+                            <i class="zmdi zmdi-whatsapp"></i>
+                        </a>
+                        <h6 class="">(Sales) +91 7672 000 5000</h6>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg pb-3">
+                    <ul class="px-0 p-0 m-0">
+                        <li><a href="https://opuslab.works/apps/crypto-nft" target="_blank">Crypto & NFT Apps</a></li>
+                        <li><a href="https://opuslab.works/apps/food-restaurant" target="_blank">Food & Restaurant Apps</a></li>
+                        <li><a href="https://opuslab.works/apps/ecommerce-grocery-laundry" target="_blank">eCommerce, Grocery & Laundry</a></li>
+                        <li><a href="https://opuslab.works/apps/doctor-pharmacy" target="_blank">Doctor & Pharmacy Apps</a></li>
+                        <li><a href="https://opuslab.works/apps/online-classes" target="_blank">Online Classes Apps</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg pb-3">
+                    <ul class="px-0 p-0 m-0">
+                        <li><a href="https://opuslab.works/apps/ott-music" target="_blank">OTT & Music Apps</a></li>
+                        <li><a href="https://opuslab.works/apps/service-provider" target="_blank">Service Provider Apps</a></li>
+                        <li><a href="https://opuslab.works/apps/cab-booking" target="_blank">Cab Booking Apps</a></li>
+                        <li><a href="https://opuslab.works/apps/social-chatting-calling" target="_blank">Social, Chatting & Calling Apps</a></li>
+                        <li><a href="https://opuslab.works/apps/payment-banking" target="_blank">Payment & Banking Apps</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg pb-3">
+                    <ul class="px-0 p-0 m-0">
+                        <li><a href="https://opuslab.works/apps/fitness-workout" target="_blank">Fitness & Workout Apps</a></li>
+                        <li><a href="https://opuslab.works/apps/blog-news" target="_blank">Blog & News Apps</a></li>
+                        <li><a href="https://opuslab.works/apps/booking-apps" target="_blank">Booking Apps</a></li>
+                        <li><a href="https://opuslab.works/apps/community-religious" target="_blank">Community & Religious Apps</a></li>
+                        <li><a href="https://opuslab.works/apps/other-popular-apps" target="_blank">Other Popular Apps</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer_img">
+            <div class="container-fluid mx-auto text-center">
+                <img src="footer_img.png" class="img-fluid col-12 col-md-5 col-xl-10">
+            </div>
+        </div>
+    </footer>
+    <!--footer section end-->
+
+
+
+    <!--Contact us section Start-->
+    <div class="download_app_demo px-2" id="contactUS">
+        <div class="download_app_demo_header px-sm-0 px-md-0 px-lg-0 px-0 py-4">
+            <div class="col-11 col-md-11 col-md-11 col-xl-9 pl-0 mx-auto px-0">
+                <h2 class="mx-auto text-white d-flex align-items-center pt-4">Contact us
+                    <button type="button" class="btn mr-0 ml-auto cloesMenu"><i class="zmdi zmdi-close-circle"></i></button>
+                </h2>
+            </div>
+
+            <form id="contact-form" class="pt-4 mt-5">
+                <input type="hidden" id="contact-source" value="opuslab_doc_flutter" />
+                <div class="col-11 col-md-11 col-md-11 col-xl-9 pl-0 mx-auto px-0">
+
+                    <div class="form-group  col-12 col-md-10 col-lg-10 col-xl-9 px-0">
+                        <input type="text" class="form-control" placeholder="*Name" id="contact-name" required>
+                    </div>
+                    <div class="form-group  col-12 col-md-10 col-lg-10 col-xl-9 px-0">
+                        <input type="email" class="form-control" placeholder="*Email Address" id="contact-email" required>
+                    </div>
+                    <div class="form-group  col-12 col-md-10 col-lg-10 col-xl-9 px-0">
+                        <input type="text" class="form-control" placeholder="WhatsApp (with country code)" id="contact-whatsapp">
+                    </div>
+                    <div class="form-group  col-12 col-md-10 col-lg-10 col-xl-9 px-0">
+                        <textarea name="user-message" id="contact-message" rows="4" class="form-control" placeholder="*Your Message" required></textarea>
+                    </div>
+                </div>
+                <div class="media d-block">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <button type="submit" id="contact-button" class="btn primary_button contact_us rounded mt-3" style="margin-right: 0 !important; margin-left: 0!important;">
+                                <a>
+                                    Send Message
+                                </a>
+                            </button>
+                        </div>
+                        <div class="col-12 col-md-6 d-none d-md-flex">
+                            <div class="contactUS_footer_img text-right pl-0  mr-0 ml-auto px-0 pt-3">
+                                <img src="./footer_img.png" class="img-fluid mt-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--Contact us section end-->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./app.js"> </script>
+    <script src="./bootstrap.min.js"></script>
+    <script src="wow.min.js"></script>
+    <script src="./theme.js"></script>
+
+    <script>
+        $("#contactUS_btn").click(function() {
+            $("#contactUS").addClass("active");
+        });
+        $(".cloesMenu").click(function() {
+            $("#contactUS").removeClass("active");
+        });
+
+
+        $(".darkTheme_lightThemeButton").click(function() {
+            $("body").toggleClass("dark_theme");
+        });
+        $('#gettingStartedBtn h4').on('click', function() {
+            $('#gettingStartedContent').addClass('active');
+            $('#CustomizationsContent').removeClass('active');
+            $('#platformBuildsContent').removeClass('active');
+        });
+        $('#customizationBtn h4').on('click', function() {
+            $('#CustomizationsContent').addClass('active');
+            $('#gettingStartedContent').removeClass('active');
+            $('#platformBuildsContent').removeClass('active');
+        });
+        $('#platformBuildsBtn h4').on('click', function() {
+            $('#platformBuildsContent').addClass('active');
+            $('#gettingStartedContent').removeClass('active');
+            $('#CustomizationsContent').removeClass('active');
+        });
+
+        $('#previous1').on('click', function() {
+            $('#gettingStartedContent').addClass('active');
+            $('#CustomizationsContent').removeClass('active');
+            $('#platformBuildsContent').removeClass('active');
+            $('#gettingStartedBtn .sub-menu').addClass('show');
+            $('#customizationBtn .sub-menu').removeClass('show');
+            $('#platformBuildsBtn .sub-menu').removeClass('show');
+        });
+
+        $('#Next1').on('click', function() {
+            $('#CustomizationsContent').addClass('active');
+            $('#gettingStartedContent').removeClass('active');
+            $('#platformBuildsContent').removeClass('active');
+            $('#customizationBtn .sub-menu').addClass('show');
+            $('#gettingStartedBtn .sub-menu').removeClass('show');
+            $('#platformBuildsBtn .sub-menu').removeClass('show');
+        });
+        $('#Next2').on('click', function() {
+            $('#platformBuildsContent').addClass('active');
+            $('#gettingStartedContent').removeClass('active');
+            $('#CustomizationsContent').removeClass('active');
+            $('#platformBuildsBtn .sub-menu').addClass('show');
+            $('#gettingStartedBtn .sub-menu').removeClass('show');
+            $('#customizationBtn .sub-menu').removeClass('show');
+        });
+        $('#previous2').on('click', function() {
+            $('#CustomizationsContent').addClass('active');
+            $('#gettingStartedContent').removeClass('active');
+            $('#platformBuildsContent').removeClass('active');
+
+            $('#customizationBtn .sub-menu').addClass('show');
+            $('#gettingStartedBtn .sub-menu').removeClass('show');
+            $('#platformBuildsBtn .sub-menu').removeClass('show');
+        });
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
